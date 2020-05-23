@@ -1,0 +1,14 @@
+<html>
+  <head></head>
+  <body>
+    <table>
+      {% for movie in movies%}
+      <tr>
+        <td>{{movie.theatre}}</td>
+        <td>{{movie.name}}</td>
+        <td>{{movie.time}}</td>
+      </tr>
+      {%endfor%}
+    </table>
+  </body>
+</html>

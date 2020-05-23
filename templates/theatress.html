@@ -1,0 +1,13 @@
+<html>
+  {% for name, theatre  in schedule.items()%}
+  <h1> <a href="/cinema/{{theatre.id}}">{{name}}</a></h1>
+  <table border="1">
+      {% for movie in theatre.movies()%}
+      <tr>
+          <td>{{movie.name}}</td> 
+          <td>{{movie.time}}</td>
+      </tr>
+      {%endfor%}
+  </table>
+  {%endfor%}
+</html>

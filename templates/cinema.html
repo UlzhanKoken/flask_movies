@@ -1,6 +1,5 @@
 <html>
-  {% for theatre, movies  in theatres.items()%}
-  <h1> <a href="{{theatre_url}}">{{theatre}}</a></h1>
+  <h1><a href="/{{theatre}}">{{theatre}}</a></h1>
   <table border="1">
       {% for movie in movies %}
       <tr>
@@ -9,5 +8,4 @@
       </tr>
       {%endfor%}
   </table>
-  {%endfor%}
 </html>
